@@ -7,6 +7,7 @@
 :set softtabstop=4
 :set mouse=a
 :set encoding=UTF-8
+
 call plug#begin()
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
@@ -36,21 +37,12 @@ nmap <F8> :TagbarToggle<CR>
 :set completeopt-=preview " For No Previews
 
 :colorscheme gruvbox
+:highlight Normal ctermbg=none 
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
-" --- Just Some Notes ---
-" :PlugClean :PlugInstall :UpdateRemotePlugins
-"
-" :CocInstall coc-tsserver
-" :CocInstall coc-json
-" :CocInstall coc-python
-" :CocInstall coc-clangd
-" :CocInstall coc-snippets
-" :CocCommand snippets.edit... FOR EACH FILE TYPE
-
-" air-line
+" air-line config
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
